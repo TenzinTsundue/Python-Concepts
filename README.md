@@ -2,7 +2,7 @@
 ## Content
 - [Try and Except](#tryexcept)
 
----
+
 > <a name = "tryexcept">Try and except</a>
 
 Python has many built in exceptions that are raised when your program encounters an error. When exception occur, the python interpreter stops the current process and passes it to the calling process until it is handled. If not handled the program will crash.

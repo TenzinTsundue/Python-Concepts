@@ -1,6 +1,7 @@
 # Python-Concepts
 ## Content
 - [Try and Except](#tryexcept)
+- [__str__, __repr__](#strrepr)
 
 
 > <a name = "tryexcept">Try and except</a>
@@ -45,4 +46,44 @@ except Exception:
 	print("File currupted")
 
 ```
+> <a name = "strrepr">__str__ and __repr__</a>
 
+__str__() method returns the string representation of the object.
+__repr__() functin return the object representation in string format.
+
+Well, the __str__ function is suppose to return a human-readable format, which is good for logging or to display some information about the object. Whereas, the __repr__ function is supposed to return an "official" string representatin of the object, which can be used to construct the object again.  
+
+```bash
+>>> import datetime
+>>> now = datetime.datetime.now()
+>>> now.__str__()
+'2020-12-27 22:28:00.324317'
+>>> now.__repr__()
+'datetime.datetime(2020, 12, 27, 22, 28, 0, 324317)'
+```
+
+```python
+# test.py
+class Car:
+    def __init__(self, wheel, seat):
+        self.wheel = wheel
+        self.seat = seat
+
+    def __repr__(self):
+        return f'repr wheel: {self.wheel}, repr seat: {self.seat}'
+
+    def __str__(self):
+        return f'str wheel:{self.wheel}, str seat: {self.seat}'
+
+car_1 = Car(4, 5)
+print(car_1.__repr__())
+print(car_1.__str__())
+print(f'default: {car_1}')
+
+```
+```bash
+>>>py test.py
+repr wheel: 4, repr seat: 5
+str wheel:4, str seat: 5
+default: str wheel:4, str seat: 5
+```

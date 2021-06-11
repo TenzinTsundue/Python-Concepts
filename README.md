@@ -1,7 +1,7 @@
 # Python-Concepts
 ## Content
 - [Try and Except](#tryexcept)
-- [__str__, __repr__](#strrepr)
+- [dunder str, repr](#strrepr)
 
 
 > <a name = "tryexcept">Try and except</a>

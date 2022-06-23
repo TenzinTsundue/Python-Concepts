@@ -1,4 +1,4 @@
-Python string methods
+# Python string methods
 1. Capitalize
 ```python
 >>> name = 'tenzin'

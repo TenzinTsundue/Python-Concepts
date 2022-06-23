@@ -85,3 +85,59 @@ True
 >>> x
 True
 ``` 
+13. Isapha
+```python
+>>> name = "Andy123"
+>>> is_alpha = name.isalpha()
+>>> is_alpha
+False
+``` 
+14. Isascii 
+```python
+>>> game = "Cyberpunk2022"
+>>> is_ascii = game.isascii()
+>>> is_ascii
+True
+```
+15. Isdecimal
+```python
+>>> txt = "\u0033"
+>>> x = txt.isdecimal()
+>>> x
+True
+``` 
+16. Isdigit
+```python
+value = "5000"
+>>> is_digit = value.isdigit()
+>>> is_digit
+True
+``` 
+17. Isidentiifier
+```python
+>>> txt = "2022Cyber"
+>>> x = txt.isidentifier()
+>>> x
+False
+``` 
+18. Isnumeric
+```python
+>>> txt = "2022"
+>>> x = txt.isnumeric()
+>>> x
+True
+``` 
+19. Isprintable 
+```python
+>>> txt = 'Hey\nMy name is Tenzin'
+>>> x = txt.isprintable()
+>>> x
+False
+```
+20. Islower
+```python
+>>> name = "tenzin"
+>>> is_lower = name.islower()
+>>> is_lower
+True
+``` 

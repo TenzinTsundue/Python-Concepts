@@ -197,3 +197,58 @@ Hello Frodo      !
 >>> print(txt.translate(tbl))
 Harry Potter
 ``` 
+29. Partition
+```python
+>>> txt = "HTML is a programming language?"
+>>> x = txt.partition('programming')
+>>> x
+('HTML is a ', 'programming', ' language?')
+```
+30. Replace
+```python
+>>> txt = "That's a red wine"
+>>> txt2 = txt.replace("red", "white")
+>>> txt2
+"That's a white wine"
+``` 
+31. Rfind
+```python
+>>> txt = "I love coffee coffee"
+>>> x = txt.rfind("coffee")
+>>> x
+14
+```
+32. Rindex
+```python
+>>> txt = "I love coffee coffee"
+>>> x = txt.rindex("coffee")
+>>> x
+14
+``` 
+33. Rjust
+```python
+>>> txt = "JaveScript"
+>>> x = txt.rjust(20, ".")
+>>> x
+'..........JaveScript'
+```
+34. Rpartition
+```python
+>>> txt = "One for you and one for me."
+>>> x = txt.rpartition("for")
+>>> x
+('One for you and one ', 'for', ' me.')
+``` 
+35. Rsplit
+```python
+>>> txt = "No! No! No! No! No!"
+>>> x = txt.rsplit("! ", 3)
+>>> x
+['No! No', 'No', 'No', 'No!']
+```
+36. rstrip
+```python
+>>> x = txt.rstrip()
+>>> print("Hello", x, "!")
+Hello      Frodo !
+```

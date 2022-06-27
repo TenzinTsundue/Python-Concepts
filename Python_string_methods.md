@@ -141,3 +141,59 @@ False
 >>> is_lower
 True
 ``` 
+21. Isspace
+```python
+>>> txt = "   "
+>>> x = txt.isspace()
+>>> x
+True
+``` 
+22. Isupper
+```python
+>>> txt = "THIS IS THE TEXT"
+>>> x = txt.isupper()
+>>> x
+True
+``` 
+23. Istitle
+```python
+>>> txt = "I Like Tech Twitter"
+>>> x = txt.istitle()
+>>> x
+True
+``` 
+24. Join
+```python
+>>> morning = {"shower", "breackfast", "work"}
+>>> morning_join = " > ".join(morning)
+>>> morning_join
+'work > shower > breackfast'
+```
+25. ljust
+```python
+>>> txt = "JaveScript"
+>>> x = txt.ljust(20, ".")
+>>> x
+'JaveScript..........'
+```
+26. Lower
+```python
+>>> name = "Tenzin Tsundue"
+>>> lower_name = name.lower()
+>>> lower_name
+'tenzin tsundue'
+```
+27. Istrip 
+```python
+>>> txt = "     Frodo     "
+>>> x = txt.lstrip()
+>>> print("Hello", x, "!")
+Hello Frodo      !
+```
+28. Maketrans
+```python
+>>> txt = "Harry Cotter"
+>>> tbl = txt.maketrans("C", "P")
+>>> print(txt.translate(tbl))
+Harry Potter
+``` 

@@ -252,3 +252,80 @@ Harry Potter
 >>> print("Hello", x, "!")
 Hello      Frodo !
 ```
+37. split
+```python
+>>> txt = "No! No! No! No! No!"
+>>> x = txt.split("! ", 3)
+>>> x
+['No', 'No', 'No', 'No! No!']
+```
+38. splitlines
+```python
+>>> txt = "hey there\nHow's your day going?"
+>>> x = txt.splitlines(True)
+>>> x
+['hey there\n', "How's your day going?"]
+```
+39. startswith
+```python
+>>> name = "Tenzin"
+>>> start = name.startswith("Mi")
+>>> start
+False
+```
+40. strip
+```python
+>>> txt = "    Tenzin    "
+>>> x = txt.strip()
+>>> print("Hello", x, "!")
+Hello Tenzin !
+```
+41. swapcase
+```python
+>>> txt = "e.t. PHONE HOME"
+>>> x = txt.swapcase()
+>>> x
+'E.T. phone home'
+```
+42. title
+```python
+>>> txt = "This is my place"
+>>> x = txt.title()
+>>> x
+'This Is My Place'
+```
+43. translate
+```python
+>>> dict_ascii = {74 : 80, 105 : 97}
+>>> txt = "Jim".translate(dict_ascii)
+>>> txt
+'Pam'
+```
+44. upper
+```python
+>>> names = "JIm aNd DwIGht"
+>>> upper_names = names.upper()
+>>> upper_names
+'JIM AND DWIGHT'
+```
+45. zfill
+```python
+>>> price  = ".125"
+>>> price_fill = price.zfill(6)
+>>> price_fill
+'00.125'
+```
+46. remobeprefix
+```python
+>>> name = "Aaron"
+>>> name_new = name.removeprefix("Aar")
+>>> name_new
+on
+```
+47. removesuffix
+```python
+>>> name = "Aaron"
+>>> name_new = name.removesuffix("on")
+>>> name_new
+Aaron
+```
